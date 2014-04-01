@@ -1,0 +1,147 @@
+.container.home{
+	z-index: 10;
+}
+
+.background{
+	position: absolute;	
+	z-index: 5;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover; 
+	background-position: center;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.background.current {
+	opacity: 1;
+}
+
+.caption{
+	color: white;
+	font-size: 12px;
+	text-align: left;
+	margin-bottom: 10px;	
+	a{
+		color: $blue;
+
+		&:hover{
+			color: white;
+		}
+	}
+}
+
+//background images on homepage
+
+.cat-item-3{
+	background-image: url(images/laptopfull.jpg);
+	background-repeat:no-repeat;
+}/*html and css*/
+
+.cat-item-6{
+	background-image: url(images/flower.jpg);
+	background-repeat:no-repeat;
+
+}/*inspiration*/
+
+.cat-item-7{
+	background-image: url(images/lights.jpg);
+	background-repeat:no-repeat;
+
+}/*design*/
+
+.cat-item-8{
+	background-image: url(images/books.jpg);
+	background-repeat:no-repeat;
+
+}/*learning*/
+
+.cat-item-9{
+	background-image: url(images/phone.jpg);
+	background-repeat:no-repeat;
+
+}/*JS*/
+
+.cat-item-23{
+	background-image: url(images/coffeelaptop.jpg);
+	background-repeat:no-repeat;
+
+}/*UI/UX*/
+
+
+//white hover squares on homepage - category listing
+li.cat-item{
+	list-style: none;
+
+	a{
+		padding-top: 65px;
+		font-weight: 600;
+		font-size: 20px;
+		text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+		color: $blue;
+
+		width: 161px;
+		height: 161px;
+		background: rgba(255,255,255,.8);
+		float: left;
+		display: block;
+		text-align: center;
+		margin: 2px;
+		position: relative;
+		box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+		text-decoration: none;
+
+		&:hover{
+			color: $darkblue;
+			background: rgba(255,255,255,1);
+		}
+
+	}
+}
+
+.title{
+	width: 450px;	
+	margin-bottom: 75px;
+	padding-top: 50px;
+}
+
+h1{
+	margin-top: 0;
+}
+
+h1 a{
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 120px;
+	line-height: 80%;
+	letter-spacing: -5px;
+	text-shadow: 1px 1px 1px rgba(180,180,180,1);
+	margin-bottom: 18px;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+a.website{
+	padding: 10px;
+	text-decoration: none;
+	background: $blue;
+	display: block;
+	margin-top: 15px;
+	width: 180px;
+	text-align: center;
+	box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	color: #FFF;
+	transition: background .2s ease;
+
+	&:hover{
+		background: $darkblue;
+	}
+}
+
+.imageHovers{
+	width: 100%;
+	margin: 100px 0 5px 0;
+	clear: both;
+}

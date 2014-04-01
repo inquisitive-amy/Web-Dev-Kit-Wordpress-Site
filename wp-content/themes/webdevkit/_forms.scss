@@ -1,0 +1,123 @@
+//Form Styles On Submit Page
+
+div.form{
+	color:white;
+	background: $darkgray;
+	padding: 20px;
+	float: left;
+	width: 48%;
+}
+
+
+.gform_heading{
+	display: none;
+}
+
+label.gfield_label{
+	font-weight: 400;
+	color: white;
+	margin-bottom: 10px;
+	display: block;
+}
+
+
+#field_1_4{
+	overflow:hidden;
+	margin-bottom: 15px;
+}
+
+.ginput_container{
+	width: 100%;
+}
+
+button,input{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+:not(:checked) input[type="radio"]{
+	display: none;
+	padding: 10px;
+}
+
+//Gravity forms removing inheriting styles from theme
+
+body .gform_wrapper form .gform_body ul,{
+    list-style-type: none !important;
+    list-style-image: none !important;
+    list-style: none !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+ul.gfield_radio {
+		
+		li{
+
+			&:hover{
+				background: $darkblue;
+			}
+
+			label{
+				color:white;
+				margin: 1% 1% 0 0;
+				padding: 10px;
+				background: $blue;
+				float: left;
+				width: 49%;
+			}
+		}
+}
+
+form input[type="radio"]:checked + label{
+	background: $darkblue;
+}
+
+
+form .charleft{
+	color:white;
+	font-size: 12px;
+	margin-top: -15px;
+}
+
+div.validation_error{
+	color:white;
+}
+
+//Category Labels/Headers
+
+fieldset{
+	border: 0;
+	padding: 0;
+	margin: 0 7px 4px 0;
+	position: relative;
+}
+
+.categorybtn{
+	margin: 10px 0 20px 0;
+}
+
+input:focus{
+	border: 2px solid rgb(255,0,0);
+}
+
+input[type="submit"]{
+	background: $blue;
+	border: 0;
+	color: #FFF;
+	box-shadow: 0;
+	width: 100%;
+	text-align: left;
+	padding: 10px 15px;
+	transition: background 0.5s ease;
+	text-transform: uppercase;
+
+	&:hover{
+		background: $darkblue;
+	}
+
+	&:focus{
+		outline: none;
+	}
+}

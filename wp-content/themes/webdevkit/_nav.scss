@@ -1,0 +1,156 @@
+//Header Styles
+
+ .navbar{
+ 	background: #eee;
+ 	padding-bottom: 15px;
+ 	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+ 	height: 80px;
+ }
+
+ .visible{
+ 	display: block;
+ 	z-index: 9999999;
+ }
+
+ a{
+ 	text-decoration: none;
+ }
+
+a.dropDown{
+	float: right;
+	display: block;
+
+	position: relative;
+	top: 20px;
+	right: 6px;
+	width: 40px;
+	height: 40px;
+
+	color: $blue;
+	text-decoration: none;
+	font-size: 27px;
+	text-align: center;
+	background: #000;
+	box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	z-index: 999999999;
+	transition: color 0.25s ease;
+}
+
+a.dropDown:hover{
+	color: white;
+}
+
+nav{
+	position: relative;
+	z-index: 10;
+}
+
+
+nav ul {
+	width: 209px;
+	list-style: none;
+	display: none;
+	margin-top: 1px;
+	position: absolute;
+	top: 59px;
+	right: 6px;
+}
+
+nav ul li a {
+	width: 100%;
+	padding: 8px 0px;
+	background: #FFF;
+	color: #000;
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	border: 1px solid transparent;
+	z-index: 999999999;
+}
+
+nav ul.sub-menu{
+	position: relative;
+	top: -40px;
+	display: none;
+	right: 200px;
+
+	li a{
+		background: rgb(230,230,230);
+	}
+}
+
+nav ul li a:hover{
+	background: #000;
+	color: #FFF;
+}
+
+li#menu-item-28:hover ul.sub-menu{
+	display: block;
+}
+
+h2.smallLogo{
+	font-size: 30px;
+	text-transform: uppercase;
+	padding-top: 25px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+h2.smallLogo a{
+	text-decoration: none;
+	color: $blue;
+	transition: color 0.5s ease;
+
+	&:hover{
+		color:$darkblue;
+	}
+}
+
+
+//Footer Styles
+
+footer{
+	padding: 25px 0 20px 0;
+	background: #000;
+	width: 100%;
+	font-size: 12px;
+	clear:both;
+
+	p{
+		color: white;
+		margin: 0;
+		border-top: 1px solid white;
+		padding-top: 5px;
+		width: 470px;
+
+		a{
+			color: $blue;
+		}
+	}
+}
+
+footer ul{
+	margin-top: 0;
+	padding-left: 0;
+
+	li{
+		list-style-type: none;
+		text-decoration: none;
+		display: inline;
+
+		a{
+			margin: 0 10px 0 0;
+			display: inline;
+			text-decoration: none;
+			color: #FFF;
+			line-height: 2;
+			transition: color 0.5s ease;
+
+			&:hover{
+				color: $blue;
+			}
+		}
+	}
+}
